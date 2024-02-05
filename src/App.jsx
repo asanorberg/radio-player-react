@@ -16,13 +16,12 @@ function App() {
     fetch("https://api.sr.se/api/v2/channels?format=json&size=100")
       .then((result) => result.json())
       .then((data) => {
-        console.log(data);
         setChannels(data.channels);
       })
       .finally(() => {
         setIsLoading(false);
       });
-    // }, 2000);
+    // }, 4000);
   }, []);
 
   const useStorageState = (key, initialState) => {
@@ -64,7 +63,7 @@ function App() {
         </div>
       )}
 
-      {loading && [1, 2, 3, 4, 5].map((n) => <Skeleton key={n} />)}
+      {loading && [1, 2, 3, 4, 5, 6, 7].map((n) => <Skeleton key={n} />)}
     </div>
   );
 }

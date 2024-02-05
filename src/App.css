@@ -19,6 +19,7 @@
   font-family: Arial, Helvetica, sans-serif;
   border: 1px rgb(205, 205, 205) solid;
   width: fit-content;
+  border-radius: 12px;
 }
 
 .search input {
@@ -28,6 +29,7 @@
   width: 200px;
   border: none;
   font-size: 16px;
+  background: none;
 }
 
 .search input:focus {
@@ -49,16 +51,18 @@ input:focus::placeholder {
 .station {
   display: flex;
   width: 420px;
-  height: 100px;
+  height: 140px;
   padding: 30px;
   margin-bottom: 20px;
+  border-radius: 12px;
 }
 
 .station-text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-
   justify-content: center;
   align-items: flex-start;
 }
@@ -66,14 +70,24 @@ input:focus::placeholder {
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  font-size: 18px;
-  font-weight: 100;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+}
+
+p {
+  text-align: left;
+  font-size: 12px;
+  margin: 8px 0px;
 }
 
 audio {
-  height: 40px;
+  min-height: 30px;
+  max-height: 30px;
+  max-width: 280px;
   opacity: 50%;
 }
 img {
-  width: 100px;
+  width: 120px;
 }

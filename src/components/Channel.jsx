@@ -13,7 +13,7 @@ const Channel = ({ channel }) => {
           <img src={channel.image} alt="channel logo" />
         </div>
         <div className="station-text">
-          <h1> {channel.name}</h1>{" "}
+          <h1> {channel.name}</h1> <p>{channel.tagline}</p>
           <audio src={channel.liveaudio.url} type="audio/mpeg" controls></audio>
         </div>
       </div>

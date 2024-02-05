@@ -1,9 +1,10 @@
 .skeleton-container {
   background-color: rgb(235, 235, 235);
   width: 420px;
-  height: 100px;
+  height: 140px;
   padding: 30px;
   margin-bottom: 20px;
+  border-radius: 12px;
   display: flex;
   position: relative;
   overflow: hidden;
